@@ -1,5 +1,11 @@
-// alert('According to the pattern of this design, this was based on width of 1440 pixels');
-
+alert('According to the pattern of this design, this was based on width of 1440 pixels');
+// hamberger menu codes
+$('.main-content > .hamberger').click(function(event) {
+    $('.sidebar').addClass('active');
+});
+$('.sidebar > .times').click(function(event) {
+    $('.sidebar').removeClass('active');
+});
 
 var chartObj;
 $(function ()
