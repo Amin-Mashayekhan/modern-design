@@ -317,11 +317,7 @@ ul {
   @media (min-width: 576px) {
     .main-content .hamberger {
       top: 6px;
-      left: 6px; } }
-  @media (min-width: 768px) {
-    .main-content .hamberger {
-      top: 8px;
-      left: 8px; } }
+      left: 42px; } }
   @media (min-width: 1200px) {
     .main-content .hamberger {
       display: none; } }
