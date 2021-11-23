@@ -171,6 +171,9 @@ ul {
 
                     &.last-item {
                         padding: 140px 33px 33px;
+                        @media only screen and (max-height: 935px) {
+                            padding-top: 104px;
+                        }
                         @media only screen and (min-height: 900px) {
                             height: 475px;
                         }

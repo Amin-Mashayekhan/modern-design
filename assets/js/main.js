@@ -1,4 +1,4 @@
-alert('According to the pattern of this design, this was based on width of 1440 pixels');
+alert('According to the pattern of this design, this was based on width of 1440 pixels.');
 
 
 

@@ -390,6 +390,9 @@ ul {
           border-radius: 0 0 31.08px 0; }
         .main-content .sidebar .inner .ul-sidebar .side-item.last-item {
           padding: 140px 33px 33px; }
+          @media only screen and (max-height: 935px) {
+            .main-content .sidebar .inner .ul-sidebar .side-item.last-item {
+              padding-top: 104px; } }
           @media only screen and (min-height: 900px) {
             .main-content .sidebar .inner .ul-sidebar .side-item.last-item {
               height: 475px; } }
