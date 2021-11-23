@@ -3,15 +3,15 @@
 /* buttons */
 /* Typography */
 *,
-*::before,
 *::after,
-p,
+*::before,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   box-sizing: border-box;
   margin: 0; }
 
@@ -307,12 +307,6 @@ ul {
 .ls-md {
   letter-spacing: -0.5px; }
 
-.common-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-
 .main-content {
   position: relative; }
   .main-content .hamberger {
@@ -330,6 +324,9 @@ ul {
       .main-content .hamberger {
         top: 8px;
         left: 8px; } }
+    @media (min-width: 1200px) {
+      .main-content .hamberger {
+        display: none; } }
     .main-content .hamberger .line {
       width: 28px;
       height: 3px;
@@ -342,7 +339,7 @@ ul {
     top: 0;
     left: 0;
     width: 240px; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
       .main-content .sidebar {
         left: -250px; } }
     .main-content .sidebar.active {
@@ -392,7 +389,7 @@ ul {
         .main-content .sidebar .inner .ul-sidebar .side-item.before-active {
           border-radius: 0 0 31.08px 0; }
         .main-content .sidebar .inner .ul-sidebar .side-item.last-item {
-          padding: 140px 33px 33px 33px; }
+          padding: 140px 33px 33px; }
           @media only screen and (min-height: 900px) {
             .main-content .sidebar .inner .ul-sidebar .side-item.last-item {
               height: 475px; } }
@@ -403,7 +400,7 @@ ul {
   .main-content .main-part {
     margin-left: 240px;
     max-width: 1200px; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
       .main-content .main-part {
         margin-left: unset; } }
     .main-content .main-part .top-header .input {
@@ -421,7 +418,7 @@ ul {
     @media (max-width: 480px) {
       .main-content .main-part .top-boxes .box-item {
         width: 50%; } }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .main-content .main-part .top-boxes .box-item > div {
         padding-top: 6px;
         padding-bottom: 6px; } }
@@ -430,18 +427,18 @@ ul {
       white-space: nowrap; }
     .main-content .main-part .top-boxes .box-item .vline {
       height: 64px; }
-      @media (max-width: 991px) {
+      @media (max-width: 990px) {
         .main-content .main-part .top-boxes .box-item .vline {
           margin-left: 22px;
           margin-right: 22px; } }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         .main-content .main-part .top-boxes .box-item .vline {
           margin-left: 1px;
           margin-right: 1px; } }
     .main-content .main-part .top-boxes .box-item .box-inner {
       min-width: 80px;
       min-height: 80px; }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         .main-content .main-part .top-boxes .box-item .box-inner {
           transform: scale(0.66); } }
       @media (max-width: 380px) {
@@ -449,10 +446,10 @@ ul {
           transform: scale(0.56); } }
       .main-content .main-part .top-boxes .box-item .box-inner img {
         margin-bottom: -7px; }
-    @media (max-width: 991px) {
+    @media (max-width: 990px) {
       .main-content .main-part .top-boxes .box-item > div * {
         transform: scale(0.8); } }
-    @media (max-width: 991px) {
+    @media (max-width: 990px) {
       .main-content .main-part .mid-content > div {
         padding-right: 13px !important;
         padding-left: 13px !important; } }
@@ -463,15 +460,15 @@ ul {
       max-width: 100%; }
       @media (min-width: 991px) {
         .main-content .main-part .mid-content .chart #container {
-          flex: 1 0 0%; } }
+          flex: 1 0 0; } }
       @media (min-width: 680px) {
         .main-content .main-part .mid-content .chart #container {
           width: 420px; } }
-    @media (max-width: 991px) {
+    @media (max-width: 990px) {
       .main-content .main-part .last-content > div {
         padding-right: 13px !important;
         padding-left: 13px !important; } }
-    @media (min-width: 991px) {
+    @media (min-width: 990px) {
       .main-content .main-part .last-content .chart {
         transform: rotate(-6.69deg) translate(49px, -30px); } }
     .main-content .main-part .last-content .chart #Tooltip #value {
@@ -491,7 +488,7 @@ ul {
       width: 126px;
       padding: 9.6px 0;
       white-space: nowrap; }
-      @media (max-width: 991px) {
+      @media (max-width: 990px) {
         .main-content .main-part .last-content .performers .cards .btn {
           padding-right: 13px !important;
           padding-left: 13px !important; } }
