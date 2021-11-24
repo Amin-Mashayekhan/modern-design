@@ -227,6 +227,8 @@ ul {
             .box-item {
                 @media (max-width: 480px) {
                     width: 50%;
+                    padding-right: 5.8px;
+                    padding-left: 5.8px;
                 }
                 // @media (max-width: 380px) {
                 //   width: 100%;
@@ -272,9 +274,13 @@ ul {
                     }
                 }
 
-                > div * {
-                    @media (max-width: 990px) {
+                @media (max-width: 990px) {
+                    .box-inner, .vline, .number {
                         transform: scale(0.8);
+                    }
+                    .sub-text{
+                        transform: scale(0.96);
+                        margin-left: 5px;
                     }
                 }
             }
@@ -285,6 +291,17 @@ ul {
                 @media (max-width: 990px) {
                     padding-right: 13px !important;
                     padding-left: 13px !important;
+                }
+            }
+
+            .boxes{
+                .box{
+                    @media  (max-width: 466px){
+                        width: 45%;
+                    }
+                    @media  (max-width: 380px){
+                        width: 50%;
+                    }
                 }
             }
 
